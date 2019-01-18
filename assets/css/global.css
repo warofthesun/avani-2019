@@ -1,4 +1,12 @@
 body {padding-top: 62px; }
+
+.baner-section.page {
+  height: 30vh;
+}
+
+.baner-section.page h2 {
+  margin-bottom: 0;
+}
 .header {background-color: #F7941D;}
 .header .navbar-inverse {
     background-color: #F7941D;
@@ -374,9 +382,9 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {font-family: 'Signika
     .contact_form_bx { padding: 40px 20px 20px 20px;}
 }
 
-.navbar-brand img, .ftr_logo img{ 
-	max-width: 203px; 
-	height:auto; 
+.navbar-brand img, .ftr_logo img{
+	max-width: 203px;
+	height:auto;
 }
 #widget_sp_image-2 img{
 	max-width: 85px !important;
