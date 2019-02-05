@@ -81,6 +81,11 @@
 		</div>
 	</footer>
 	<?php wp_footer(); ?>
+	<script>
+	document.addEventListener( 'wpcf7mailsent', function( event ) {
+	    location = '<?php the_field("test"); ?>';
+	}, false );
+	</script>
 </body>
 
 </html>

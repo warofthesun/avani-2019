@@ -351,6 +351,3 @@ add_action('wp_head', 'av_customizer_css'); // Customizer CSS
 add_action('init', 'av_register_custom_post_type'); // Register CPT
 
 add_shortcode('clients_display','av_clients_display_data');
-
-
-

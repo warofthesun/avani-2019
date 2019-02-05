@@ -1,3 +1,4 @@
+<!--index-->
 <?php get_header(); ?>
 
 <div class="baner-section">

@@ -1,6 +1,6 @@
 .baner-section {
     height: calc(100vh - 57px);
-    background-image: url(http://localhost/avani/wp-content/themes/avani/assets/img/header-image.jpg);
+    background-image: url(http://localhost/avani/wp-content/themes/avani-2019/assets/img/header-image.jpg);
     padding: 0 25px 60px 25px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,7 +9,7 @@
 .who_we_are {
     padding-bottom: 120px;
     padding-top: 130px;
-    background: url(http://localhost/avani/wp-content/uploads/2018/04/Map.png) no-repeat right 28%;
+    background: url(http://localhost/avani/wp-content/themes/avani-2019/assets/img/map_img.jpg) no-repeat right 28%;
 	background-size: 704px;
 }
 @media screen and (max-width: 991px){
