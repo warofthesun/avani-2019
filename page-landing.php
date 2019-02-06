@@ -5,7 +5,7 @@
 */
 ?>
 <?php get_header('landing'); ?>
-<div class="baner-section page">
+<div class="banner-section page">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-7">
@@ -17,15 +17,20 @@
 <section>
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-0 col-md-2"></div>
-			<div class="col-xs-12 col-md-8" style="margin: 2em 0;">
+			<div class="col-xs-12 col-md-6" style="margin: 2em 0;">
 				<?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
 					<?php the_content(); ?>
 				<?php endwhile; endif; ?>
 			</div>
-			<div class="col-xs-0 col-md-2"></div>
+			<div class="col-xs-12 col-md-6"><?php $form = get_field('contact_form'); echo do_shortcode($form); ?></div>
 		</div>
 	</div>
 </section>
-
+<?php if ( get_field('free_download') ) : ?>
+	<script>
+	document.addEventListener( 'wpcf7mailsent', function( event ) {
+			location = '<?php the_field("free_download"); ?>';
+	}, false );
+	</script>
+<?php endif; ?>
 <?php get_footer(); ?>

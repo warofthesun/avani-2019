@@ -1,5 +1,5 @@
-.baner-section {
-    height: calc(100vh - 57px);
+.banner-section {
+    height: calc(100vh + 57px);
     background-image: url($home_top_background_image_url);
     padding: 0 25px 60px 25px;
     background-repeat: no-repeat;

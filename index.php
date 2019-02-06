@@ -1,7 +1,7 @@
 <!--index-->
 <?php get_header(); ?>
 
-<div class="baner-section">
+<div class="banner-section">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-7">

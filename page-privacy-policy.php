@@ -1,6 +1,6 @@
 <!-- page privacy-policy -->
 <?php get_header(); ?>
-<div class="baner-section page">
+<div class="banner-section page">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-7">

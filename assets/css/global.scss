@@ -1,6 +1,6 @@
 body {}
 
-.baner-section.page {
+.banner-section.page {
   height: 30vh;
   padding: 0;
   display: flex;
@@ -8,7 +8,7 @@ body {}
   padding-bottom: 2em;
 }
 
-.baner-section.page h2 {
+.banner-section.page h2 {
   margin-bottom: 0;
 }
 .header {background-color: #F7941D;}
@@ -17,6 +17,33 @@ body {}
     border: none;
     padding: 8px 0px;
     min-height: inherit;
+}
+
+.page-template-page-landing {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00abd5+0,0073aa+100 */
+  background: #00abd5; /* Old browsers */
+  background: -moz-linear-gradient(top, #00abd5 0%, #0073aa 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #00abd5 0%,#0073aa 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #00abd5 0%,#0073aa 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00abd5', endColorstr='#0073aa',GradientType=0 ); /* IE6-9 */
+
+  .banner-section {
+    background: url('../img/header-background.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 40vh;
+    border-bottom: 2px solid white;
+  }
+
+  .container {
+    p {
+      color: #fff;
+      letter-spacing: .1em;
+      font-size: 1.2em;
+      font-weight: 300;
+    }
+  }
+
 }
 .navbar-brand {height: auto !important;padding:0 !important;}
 .navbar-as .navbar-nav {margin-top: 5px;}
@@ -89,21 +116,21 @@ body {}
     .navbar-clsr:hover, .navbar-clsr:focus {background: #c66a06 !important;}
 }
 /**/
-.baner-section h2 {
+.banner-section h2 {
     font-family: 'Signika', sans-serif;
     font-size: 64px;
     color: #fff;
     font-weight: 400;
     line-height: 72px;
-    margin-top: 27%;
+    margin-top: 32%;
     margin-bottom: 20%;
 }
-@media screen and (max-width: 1360px){.baner-section {height: auto !important;}}
-@media screen and (max-width: 1199px){.baner-section h2 {font-size: 44px;line-height: 52px;margin-top: 27%;margin-bottom: 20%;}}
-@media screen and (max-width: 575px){.baner-section h2 {font-size: 44px;line-height: 52px;margin-top: 17%;margin-bottom: 10%;}}
+@media screen and (max-width: 1360px){.banner-section {height: auto !important;}}
+@media screen and (max-width: 1199px){.banner-section h2 {font-size: 44px;line-height: 52px;margin-top: 27%;margin-bottom: 20%;}}
+@media screen and (max-width: 575px){.banner-section h2 {font-size: 44px;line-height: 52px;margin-top: 17%;margin-bottom: 10%;}}
 @media screen and (max-width: 575px){
-    .baner-section {padding: 0 15px 60px 15px !important;}
-    .baner-section h2 {font-size: 28px;line-height: 42px;margin-top: 17%;margin-bottom: 10%;}
+    .banner-section {padding: 0 15px 60px 15px !important;}
+    .banner-section h2 {font-size: 28px;line-height: 42px;margin-top: 17%;margin-bottom: 10%;}
 }
 .who_we_are h4 {
     font-family: 'Signika', sans-serif;
