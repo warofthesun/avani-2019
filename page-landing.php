@@ -15,14 +15,23 @@
 	</div>
 </div>
 <section>
-	<div class="container">
+	<div class="container lp-content">
 		<div class="row">
-			<div class="col-xs-12 col-md-6" style="margin: 2em 0;">
+			<div class="col-xs-0 col-md-1">&nbsp;</div>
+			<div class="col-xs-12 col-md-7" style="margin: 2em 0;">
 				<?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
 					<?php the_content(); ?>
 				<?php endwhile; endif; ?>
 			</div>
-			<div class="col-xs-12 col-md-6"><?php $form = get_field('contact_form'); echo do_shortcode($form); ?></div>
+			<div class="col-xs-12 col-md-4 contact-form">
+				<div class="header">
+					<h2><?php the_field('form_header'); ?></h2>
+					<p><?php the_field('form_subhead'); ?></p>
+				</div>
+				<div class="form">
+					<?php $form = get_field('contact_form'); echo do_shortcode($form); ?>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>

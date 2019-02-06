@@ -18,28 +18,102 @@
   min-height: inherit; }
 
 .page-template-page-landing {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00abd5+0,0073aa+100 */
   background: #00abd5;
-  /* Old browsers */
   background: -moz-linear-gradient(top, #00abd5 0%, #0073aa 100%);
-  /* FF3.6-15 */
   background: -webkit-linear-gradient(top, #00abd5 0%, #0073aa 100%);
-  /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #00abd5 0%, #0073aa 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00abd5', endColorstr='#0073aa',GradientType=0 );
-  /* IE6-9 */ }
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-one', endColorstr='$color-two',GradientType=0 ); }
   .page-template-page-landing .banner-section {
     background: url("../img/header-background.png");
     background-repeat: no-repeat;
     background-position: bottom;
     height: 40vh;
     border-bottom: 2px solid white; }
-  .page-template-page-landing .container p {
+  .page-template-page-landing .lp-content p {
     color: #fff;
     letter-spacing: .1em;
-    font-size: 1.2em;
-    font-weight: 300; }
+    font-size: 1.3em;
+    line-height: 1.5em;
+    font-weight: 300;
+    margin-bottom: 1em; }
+  .page-template-page-landing .lp-content ul {
+    background-color: #0282A3;
+    margin: 1em 0 1em -1.5em;
+    padding: 1.5em;
+    border-radius: 6px;
+    list-style-type: none;
+    color: white;
+    font-size: 1.3em;
+    font-weight: 300;
+    letter-spacing: .1em;
+    box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.3); }
+    .page-template-page-landing .lp-content ul li {
+      margin-bottom: .5em; }
+      .page-template-page-landing .lp-content ul li:before {
+        content: "\f0da";
+        font-family: fontawesome;
+        color: #F7941D;
+        margin-right: .5em; }
+  .page-template-page-landing .contact-form {
+    background: #0282A3;
+    background: -moz-linear-gradient(top, #0282A3 0%, #036797 100%);
+    background: -webkit-linear-gradient(top, #0282A3 0%, #036797 100%);
+    background: linear-gradient(to bottom, #0282A3 0%, #036797 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-one', endColorstr='$color-two',GradientType=0 );
+    position: relative;
+    border: 4px solid #E2F3FB;
+    border-radius: 5px;
+    padding: 0;
+    margin: 2em 0 3em; }
+    .page-template-page-landing .contact-form::after {
+      content: "";
+      display: block;
+      width: 100%;
+      position: absolute;
+      top: calc(100% + 3px);
+      left: 0;
+      height: 1px;
+      background-color: black;
+      border-radius: 50%;
+      z-index: -1;
+      transform: rotateX(80deg);
+      -webkit-box-shadow: 0px 0px 50px 10px black;
+      -moz-box-shadow: 0px 0px 50px 10px black;
+      box-shadow: 0px 0px 50px 10px black; }
+    .page-template-page-landing .contact-form .header {
+      background-color: #E2F3FB;
+      padding: 1.5em 2em;
+      text-align: center; }
+      .page-template-page-landing .contact-form .header h2 {
+        margin: 0;
+        color: #0073aa;
+        font-weight: bold;
+        margin-bottom: .5em; }
+      .page-template-page-landing .contact-form .header p {
+        color: #4A4A4A;
+        font-weight: normal;
+        font-size: 1.1em;
+        line-height: 1.2em; }
+    .page-template-page-landing .contact-form .form {
+      padding: 2em; }
+      .page-template-page-landing .contact-form .form label {
+        font-weight: 300;
+        width: 100%; }
+      .page-template-page-landing .contact-form .form input[type="text"], .page-template-page-landing .contact-form .form input[type="textarea"], .page-template-page-landing .contact-form .form input[type="email"] {
+        width: 100%;
+        border: 0;
+        border-radius: 6px;
+        color: #002e44;
+        padding: .5em;
+        box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.5); }
+      .page-template-page-landing .contact-form .form input[type="submit"] {
+        background-color: #F7941D;
+        border: 0;
+        border-radius: 3px;
+        padding: .5em 1.5em;
+        text-transform: uppercase;
+        font-weight: normal;
+        margin-top: 1em; }
 
 .navbar-brand {
   height: auto !important;
@@ -79,7 +153,7 @@
 
 @media screen and (max-width: 767px) {
   .navbar-as .navbar-nav > li > a {
-    color: #f7941d;
+    color: #F7941D;
     margin: 0; }
 
   .navbar-as .navbar-nav > li > a:hover, .navbar-as .navbar-nav > li > a:focus {
@@ -348,7 +422,7 @@ ul.ftr_link li a {
   font-weight: 300; }
 
 ul.ftr_link li a:hover, ul.ftr_link li a:focus {
-  color: #f7941d; }
+  color: #F7941D; }
 
 .txt_right {
   text-align: right; }
@@ -403,7 +477,7 @@ ul.footer_scl li a:hover, ul.footer_scl li a:focus {
   font-weight: 400; }
 
 .row_cprt a:hover, .row_cprt a:focus {
-  color: #f7941d; }
+  color: #F7941D; }
 
 .txt_cp_right {
   text-align: right;
@@ -496,7 +570,7 @@ ul.footer_scl li a:hover, ul.footer_scl li a:focus {
   outline: none !important; }
 
 .contact_form_bx .col-md-6 input:focus, .contact_form_bx .col-md-6 textarea:focus {
-  border: 2px solid #f7941d; }
+  border: 2px solid #F7941D; }
 
 .contact_form_bx .col-md-6 textarea {
   height: 170px;
@@ -531,7 +605,7 @@ ul.footer_scl li a:hover, ul.footer_scl li a:focus {
 div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   font-family: 'Signika', sans-serif;
   text-align: center;
-  border: 2px solid #f7941d !important; }
+  border: 2px solid #F7941D !important; }
 
 @media screen and (max-width: 767px) {
   .who_we_are h4, .w-w-title h3, .w-w-title .textwidget {

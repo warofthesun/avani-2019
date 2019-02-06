@@ -1,0 +1,7 @@
+@mixin gradient-bg ($color-one: $am-blue-lt, $color-two: $am-blue) {
+  background: $color-one;
+  background: -moz-linear-gradient(top, $color-one 0%, $color-two 100%); 
+  background: -webkit-linear-gradient(top, $color-one 0%,$color-two 100%); 
+  background: linear-gradient(to bottom, $color-one 0%,$color-two 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-one', endColorstr='$color-two',GradientType=0 ); 
+}
