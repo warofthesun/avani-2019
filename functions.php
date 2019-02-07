@@ -121,6 +121,7 @@ function av_setup_sidebar()
         'after_title' => '</h3>'
     ));
 }
+
 function av_setup_customize($wp_customize){
     // Remove Controls
     $wp_customize->remove_control('display_header_text');
@@ -284,6 +285,9 @@ function av_customizer_css() {
     wp_register_style('theme_css',get_template_directory_uri().'/assets/dynamic.css');
     wp_enqueue_style('theme_css');
 }
+
+add_image_size( 'ad-image', 800, 520, true );
+
 function av_register_custom_post_type()
 {
     register_post_type('av_clients',

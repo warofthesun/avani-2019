@@ -4,11 +4,29 @@
 	<div class="container">
 					<div class="header-image col-md-6"style="height:100%;display:flex;align-items:flex-end;">
 						<div class="tablet" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
-							<div class="foo" style="position: absolute; width: 70%; background-color: red; margin: 0 auto;">hey</div>
+							<div class="ad-image">
+								<?php
+
+								$image = get_field('ad_graphic');
+								// vars
+								$url = $image['url'];
+
+								// thumbnail
+								$size = 'ad-image';
+								$thumb = $image['sizes'][ $size ];
+								$width = $image['sizes'][ $size . '-width' ];
+								$height = $image['sizes'][ $size . '-height' ];
+
+								?>
+								<img src="<?php echo $thumb; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>">
+							</div>
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/tablet.png" style="position:relative;">
 						</div>
 					</div>
-					<div class="col-md-6" style="background:green;height:100%;display:flex;align-items:center;"><h2><?php the_title(); ?></h2></div>
+					<div class="col-md-6 ad-headline">
+						<h2><?php if ( get_field('ad_headline') ) : the_field('ad_headline'); else : the_title(); endif; ?></h2>
+							<p><?php the_field('ad_subline'); ?></p>
+					</div>
 	</div>
 </div>
 <section>

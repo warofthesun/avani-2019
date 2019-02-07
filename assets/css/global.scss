@@ -29,9 +29,73 @@ body {}
     background: url('../img/header-background.png');
     background-repeat: no-repeat;
     background-position: bottom;
-    height: 40vh;
+    height: inherit;
+
+    @media screen and (max-width: 990px) {
+      padding: 0px !important;
+      margin-top: 50px;
+    }
+
+    @media screen and (min-width: 990px) {
+      height: 40vh !important;
+    }
+
     border-bottom: 2px solid white;
     padding-bottom: 0;
+
+    .ad-headline {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding-top: 50px;
+
+      @media screen and (max-width: 990px) {
+        margin-left: -15px;
+        margin-right: -15px;
+        padding-top: 0px;
+        background-color: $am-white;
+      }
+
+      h2 {
+        font-size: 3em;
+        font-weight: bold;
+        color: $am-blue-dk;
+
+        @media screen and (max-width: 990px) {
+          text-align: center;
+          width: 100%;
+        }
+      }
+
+      p {
+        color: $am-blue-md;
+        font-family: 'Signika', sans-serif;
+        font-size: 1.5em;
+        letter-spacing: .1em;
+        width: 100%;
+        text-align: center;
+
+        @media screen and (min-width: 990px) {
+          color: $am-white;
+          text-align: left;
+        }
+      }
+    }
+
+    .ad-image {
+      position: absolute;
+      width: 70%;
+      background-color: $am-white;
+      overflow: hidden;
+      bottom: 0px;
+      margin: 0 auto;
+
+      img {
+        margin-bottom: -7px;
+      }
+    }
 
     h2 {
       margin-top: 0;
@@ -66,9 +130,14 @@ body {}
 
     ul {
       background-color: $am-blue-md;
-      margin: 1em 0 1em -1.5em;
+      margin: 1em -15px 1em -15px;
+
+      @media screen and (min-width: 650px) {
+        margin: 1em 0 1em -1.5em;
+        border-radius: 6px;
+      }
+
       padding: 1.5em;
-      border-radius: 6px;
       list-style-type: none;
       color: white;
       font-size: 1.3em;
@@ -92,7 +161,7 @@ body {}
   .contact-form {
     @include gradient-bg($am-blue-md, $am-blue-dk);
     position: relative;
-    border: 4px solid #E2F3FB;
+    border: 4px solid $am-white;
     border-radius: 5px;
     padding: 0;
     margin: 2em 0 3em;
@@ -115,7 +184,7 @@ body {}
     }
 
     .header {
-      background-color: #E2F3FB;
+      background-color: $am-white;
       padding: 1.5em 2em;
       text-align: center;
 
