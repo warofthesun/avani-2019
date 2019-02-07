@@ -22,7 +22,7 @@ body {}
     min-height: inherit;
 }
 
-.page-template-page-landing {
+.page-template-page-landing, .single-landing_page {
   @include gradient-bg;
 
   .banner-section {

@@ -17,37 +17,37 @@
   padding: 8px 0px;
   min-height: inherit; }
 
-.page-template-page-landing {
+.page-template-page-landing, .single-landing_page {
   background: #00abd5;
   background: -moz-linear-gradient(top, #00abd5 0%, #0073aa 100%);
   background: -webkit-linear-gradient(top, #00abd5 0%, #0073aa 100%);
   background: linear-gradient(to bottom, #00abd5 0%, #0073aa 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-one', endColorstr='$color-two',GradientType=0 ); }
-  .page-template-page-landing .banner-section {
+  .page-template-page-landing .banner-section, .single-landing_page .banner-section {
     background: url("../img/header-background.png");
     background-repeat: no-repeat;
     background-position: bottom;
     height: 40vh;
     border-bottom: 2px solid white;
     padding-bottom: 0; }
-    .page-template-page-landing .banner-section h2 {
+    .page-template-page-landing .banner-section h2, .single-landing_page .banner-section h2 {
       margin-top: 0; }
-    .page-template-page-landing .banner-section .container {
+    .page-template-page-landing .banner-section .container, .single-landing_page .banner-section .container {
       height: 100%; }
-  .page-template-page-landing .header-image {
+  .page-template-page-landing .header-image, .single-landing_page .header-image {
     height: 100%;
     position: relative; }
-    .page-template-page-landing .header-image .tablet img {
+    .page-template-page-landing .header-image .tablet img, .single-landing_page .header-image .tablet img {
       width: 100%;
       height: auto; }
-  .page-template-page-landing .lp-content p {
+  .page-template-page-landing .lp-content p, .single-landing_page .lp-content p {
     color: #fff;
     letter-spacing: .1em;
     font-size: 1.3em;
     line-height: 1.5em;
     font-weight: 300;
     margin-bottom: 1em; }
-  .page-template-page-landing .lp-content ul {
+  .page-template-page-landing .lp-content ul, .single-landing_page .lp-content ul {
     background-color: #0282A3;
     margin: 1em 0 1em -1.5em;
     padding: 1.5em;
@@ -58,14 +58,14 @@
     font-weight: 300;
     letter-spacing: .1em;
     box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.3); }
-    .page-template-page-landing .lp-content ul li {
+    .page-template-page-landing .lp-content ul li, .single-landing_page .lp-content ul li {
       margin-bottom: .5em; }
-      .page-template-page-landing .lp-content ul li:before {
+      .page-template-page-landing .lp-content ul li:before, .single-landing_page .lp-content ul li:before {
         content: "\f0da";
         font-family: fontawesome;
         color: #F7941D;
         margin-right: .5em; }
-  .page-template-page-landing .contact-form {
+  .page-template-page-landing .contact-form, .single-landing_page .contact-form {
     background: #0282A3;
     background: -moz-linear-gradient(top, #0282A3 0%, #036797 100%);
     background: -webkit-linear-gradient(top, #0282A3 0%, #036797 100%);
@@ -76,7 +76,7 @@
     border-radius: 5px;
     padding: 0;
     margin: 2em 0 3em; }
-    .page-template-page-landing .contact-form::after {
+    .page-template-page-landing .contact-form::after, .single-landing_page .contact-form::after {
       content: "";
       display: block;
       width: 100%;
@@ -91,33 +91,33 @@
       -webkit-box-shadow: 0px 0px 50px 10px black;
       -moz-box-shadow: 0px 0px 50px 10px black;
       box-shadow: 0px 0px 50px 10px black; }
-    .page-template-page-landing .contact-form .header {
+    .page-template-page-landing .contact-form .header, .single-landing_page .contact-form .header {
       background-color: #E2F3FB;
       padding: 1.5em 2em;
       text-align: center; }
-      .page-template-page-landing .contact-form .header h2 {
+      .page-template-page-landing .contact-form .header h2, .single-landing_page .contact-form .header h2 {
         margin: 0;
         color: #0073aa;
         font-weight: bold;
         margin-bottom: .5em; }
-      .page-template-page-landing .contact-form .header p {
+      .page-template-page-landing .contact-form .header p, .single-landing_page .contact-form .header p {
         color: #4A4A4A;
         font-weight: normal;
         font-size: 1.1em;
         line-height: 1.2em; }
-    .page-template-page-landing .contact-form .form {
+    .page-template-page-landing .contact-form .form, .single-landing_page .contact-form .form {
       padding: 2em; }
-      .page-template-page-landing .contact-form .form label {
+      .page-template-page-landing .contact-form .form label, .single-landing_page .contact-form .form label {
         font-weight: 300;
         width: 100%; }
-      .page-template-page-landing .contact-form .form input[type="text"], .page-template-page-landing .contact-form .form input[type="textarea"], .page-template-page-landing .contact-form .form input[type="email"] {
+      .page-template-page-landing .contact-form .form input[type="text"], .page-template-page-landing .contact-form .form input[type="textarea"], .page-template-page-landing .contact-form .form input[type="email"], .single-landing_page .contact-form .form input[type="text"], .single-landing_page .contact-form .form input[type="textarea"], .single-landing_page .contact-form .form input[type="email"] {
         width: 100%;
         border: 0;
         border-radius: 6px;
         color: #002e44;
         padding: .5em;
         box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.5); }
-      .page-template-page-landing .contact-form .form input[type="submit"] {
+      .page-template-page-landing .contact-form .form input[type="submit"], .single-landing_page .contact-form .form input[type="submit"] {
         background-color: #F7941D;
         border: 0;
         border-radius: 3px;

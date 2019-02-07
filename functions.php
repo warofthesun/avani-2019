@@ -14,6 +14,8 @@ function av_setup_scripts()
     // Load jQuery
     wp_enqueue_script('jquery');
 
+    require_once( 'inc/custom-post-type.php' );
+
     // Load Fonts
     wp_register_style('font_awesome',get_template_directory_uri().'/assets/css/font-awesome.min.css');
     wp_register_style('signika_font','https://fonts.googleapis.com/css?family=Signika:300,400,600,700',false);
@@ -35,6 +37,7 @@ function av_setup_scripts()
     // Load style.css
     wp_register_style('avani',get_template_directory_uri().'/style.css');
     wp_enqueue_style('avani');
+
 }
 function av_setup_nav_menus(){
     register_nav_menus(array(
@@ -372,5 +375,7 @@ function my_acf_settings_dir( $dir ) {
 //add_filter('acf/settings/show_admin', '__return_false');
 // 4. Include ACF
 include_once( get_stylesheet_directory() . '/inc/acf/acf.php' );
+
+require_once( 'inc/custom-post-type.php' );
 
 ?>
