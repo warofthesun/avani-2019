@@ -28,7 +28,18 @@
     background-repeat: no-repeat;
     background-position: bottom;
     height: 40vh;
-    border-bottom: 2px solid white; }
+    border-bottom: 2px solid white;
+    padding-bottom: 0; }
+    .page-template-page-landing .banner-section h2 {
+      margin-top: 0; }
+    .page-template-page-landing .banner-section .container {
+      height: 100%; }
+  .page-template-page-landing .header-image {
+    height: 100%;
+    position: relative; }
+    .page-template-page-landing .header-image .tablet img {
+      width: 100%;
+      height: auto; }
   .page-template-page-landing .lp-content p {
     color: #fff;
     letter-spacing: .1em;

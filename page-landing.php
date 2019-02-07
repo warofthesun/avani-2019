@@ -7,11 +7,13 @@
 <?php get_header('landing'); ?>
 <div class="banner-section page">
 	<div class="container">
-		<div class="row">
-			<div class="col-md-7">
-				<h2><?php the_title(); ?></h2>
-			</div>
-		</div>
+					<div class="header-image col-md-6"style="height:100%;display:flex;align-items:flex-end;">
+						<div class="tablet" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+							<div class="foo" style="position: absolute; width: 70%; background-color: red; margin: 0 auto;">hey</div>
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/tablet.png" style="position:relative;">
+						</div>
+					</div>
+					<div class="col-md-6" style="background:green;height:100%;display:flex;align-items:center;"><h2><?php the_title(); ?></h2></div>
 	</div>
 </div>
 <section>
